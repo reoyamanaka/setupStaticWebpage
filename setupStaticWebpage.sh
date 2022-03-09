@@ -1,6 +1,9 @@
 #! /bin/bash
 
 
+mkdir projectFolder
+cd projectFolder
+
 mkdir js
 mkdir css
 touch css/style.scss
@@ -27,3 +30,15 @@ cat > index.html << EOF
 </html>
 
 EOF
+
+touch compileStyle.sh
+chmod +x compileStyle.sh
+cat > compileStyle.sh << EOF
+
+#! /bin/bash
+
+
+sass css/style.scss css/style.css
+
+EOF
+
