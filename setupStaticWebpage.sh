@@ -1,9 +1,10 @@
 #! /bin/bash
 
 
-read -p "Enter project name: " projectName
+read -e -p "Enter project name: " projectName
+projectName=\"$projectName\"
 mkdir $projectName
-cd $projectName
+cd projectName
 
 mkdir js
 mkdir css
