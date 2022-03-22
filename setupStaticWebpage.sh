@@ -1,8 +1,9 @@
 #! /bin/bash
 
 
-mkdir projectFolder
-cd projectFolder
+read -p "Enter project name: " projectName
+mkdir $projectName
+cd $projectName
 
 mkdir js
 mkdir css
