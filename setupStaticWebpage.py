@@ -20,11 +20,11 @@ with open (f"{getcwd ()}/{projectName}/index.html", "w") as wf:
     wf.write ("\t<meta http-equiv='X-UA-Compatible' content='IE=edge'>\n")
     wf.write ("\t<meta name='viewport' content='width=device-width, initial-scale=1.0'>\n")
     wf.write ("\t<title>{projectName}</title>\n")
+    wf.write ("<link rel='stylesheet' href='./css/style.css' />")
     wf.write ("</head>\n")
     wf.write ("<body>\n")
     wf.write ("\tYour content goes here!\n")
     wf.write ("\t<script src='./js/main.js'></script>\n")
     wf.write ("</body>\n")
     wf.write ("</html>")
-
 
