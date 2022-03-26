@@ -1,4 +1,9 @@
-from os import getcwd, mkdir
+from os import getcwd, mkdir, utime
+
+
+def touch (path):
+    with open (path, 'a'):
+        utime (path, None)
 
 
 while True:
@@ -10,8 +15,6 @@ while True:
     except:
         print (f"\nProject name already exists in {getcwd ()}. Choose another name.\n")
    
-    print (f"{getcwd ()}/{projectName}/index.html")
-
 with open (f"{getcwd ()}/{projectName}/index.html", "w") as wf:
     wf.write ("<!DOCTYPE html>\n")
     wf.write ("<html lang='en'>\n")
@@ -27,4 +30,10 @@ with open (f"{getcwd ()}/{projectName}/index.html", "w") as wf:
     wf.write ("\t<script src='./js/main.js'></script>\n")
     wf.write ("</body>\n")
     wf.write ("</html>")
+
+mkdir (f"{getcwd ()}/{projectName}/css")
+mkdir (f"{getcwd ()}/{projectName}/js")
+mkdir (f"{getcwd ()}/{projectName}/media")
+
+touch (f"{getcwd ()}/{projectName}/css/style.scss")  
 
