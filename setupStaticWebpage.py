@@ -35,5 +35,8 @@ mkdir (f"{getcwd ()}/{projectName}/css")
 mkdir (f"{getcwd ()}/{projectName}/js")
 mkdir (f"{getcwd ()}/{projectName}/media")
 
-touch (f"{getcwd ()}/{projectName}/css/style.scss")  
+touch (f"{getcwd ()}/{projectName}/css/style.scss")
+touch (f"{getcwd ()}/{projectName}/js/main.js")
 
+with open (f"{getcwd ()}/{projectName}/css/style.scss", "w") as wf:
+    wf.write ("* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}")
