@@ -23,7 +23,7 @@ with open (f"{getcwd ()}/{projectName}/index.html", "w") as wf:
     wf.write ("\t<meta http-equiv='X-UA-Compatible' content='IE=edge'>\n")
     wf.write ("\t<meta name='viewport' content='width=device-width, initial-scale=1.0'>\n")
     wf.write (f"\t<title>{projectName}</title>\n")
-    wf.write ("<link rel='stylesheet' href='./css/style.css' />")
+    wf.write ("\t<link rel='stylesheet' href='./css/style.css' />\n")
     wf.write ("</head>\n")
     wf.write ("<body>\n")
     wf.write ("\tYour content goes here!\n")
@@ -40,3 +40,6 @@ touch (f"{getcwd ()}/{projectName}/js/main.js")
 
 with open (f"{getcwd ()}/{projectName}/css/style.scss", "w") as wf:
     wf.write ("* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n}")
+
+with open (f"{getcwd ()}/{projectName}/compileSass.sh", "w") as wf:
+    wf.write ("#! /bin/bash\n\n\nsass css/style.scss css/style.css")
