@@ -1,4 +1,4 @@
-from os import getcwd, mkdir, utime
+from os import getcwd, mkdir, utime, system
 
 
 def touch (path):
@@ -43,3 +43,5 @@ with open (f"{getcwd ()}/{projectName}/css/style.scss", "w") as wf:
 
 with open (f"{getcwd ()}/{projectName}/compileSass.sh", "w") as wf:
     wf.write ("#! /bin/bash\n\n\nsass css/style.scss css/style.css")
+
+system (f"chmod +x {getcwd ()}/{projectName}/compileSass.sh")
