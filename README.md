@@ -16,7 +16,7 @@
   <h3 align="center">Quick Static Webpage Setup Script</h3>
 
   <p align="center">
-    A Python script that creates a base HTML file linked with a base SCSS file and a JS script. Script also generates a bash script that compiles the SCSS file into CSS.
+    A Python script that creates a base HTML file linked with a base SCSS file and a JS script. Script also generates a shell script that compiles the SCSS file into CSS.
     <br />
     <a href="https://github.com/reoyamanaka/setupStaticWebpage"><strong>Explore the docs »</strong></a>
     <br />
@@ -67,7 +67,7 @@ and entering `projectName` or whatever you would like to name your project folde
 
 ![](media/images/fileStructure.png)
 
-The script auto-generates files with boilerplate code and a shell script ready to compile the SASS file into CSS.
+The script auto-generates files with boilerplate code and a shell script ready to compile the SCSS file into CSS.
 
 
 ### Built With
